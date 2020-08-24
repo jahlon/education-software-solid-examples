@@ -8,10 +8,11 @@ public class Cart {
 	private List<commerce.model.refactored.Item> items;
 
 	public Cart() {
-		items = new ArrayList<commerce.model.refactored.Item>();
+		items = new ArrayList<>();
 	}
 	
-	public void addItem(commerce.model.refactored.Item item) {
+	public void addItem(Product product, int quantity) {
+		commerce.model.refactored.Item item = new commerce.model.refactored.Item(product, quantity);
 		item.setNumber(items.size() + 1);
 		items.add(item);
 	}

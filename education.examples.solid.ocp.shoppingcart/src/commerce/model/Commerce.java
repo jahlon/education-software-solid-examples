@@ -9,8 +9,7 @@ public class Commerce {
 	}
 	
 	public void addItemToCart(Product product, int quantity) {
-		commerce.model.refactored.Item item = new commerce.model.refactored.Item(product, quantity);
-		cart.addItem(item);
+		cart.addItem(product, quantity);
 	}
 	
 	public Cart getCart() {

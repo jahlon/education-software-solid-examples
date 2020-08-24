@@ -10,10 +10,11 @@ public class PricingCalculator implements IPricingCalculator {
 	private List<IPriceRule> priceRules;
 	
 	public PricingCalculator() {
-		priceRules = new ArrayList<IPriceRule>();
+		priceRules = new ArrayList<>();
 		priceRules.add(new NormalPriceRule());
 		priceRules.add(new SpecialPriceRule());
 		priceRules.add(new WeightPriceRule());
+		priceRules.add(new OtherRule());
 	}
 	
 	@Override

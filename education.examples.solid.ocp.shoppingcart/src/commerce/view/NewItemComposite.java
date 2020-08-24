@@ -51,7 +51,7 @@ public class NewItemComposite extends Composite {
 		comboViewer = new ComboViewer(grpNewItem, SWT.READ_ONLY);
 		Combo comboProduct = comboViewer.getCombo();
 		
-		comboViewer.setContentProvider(ArrayContentProvider.getInstance());
+		comboViewer.setContentProvider(new ArrayContentProvider());
 		comboViewer.setLabelProvider(new LabelProvider() {
 
 			@Override
