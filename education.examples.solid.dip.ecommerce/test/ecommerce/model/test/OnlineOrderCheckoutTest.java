@@ -25,7 +25,7 @@ public class OnlineOrderCheckoutTest {
 	private PaymentDetails paymentDetails;
 	
 	@Before
-	public void setUp() throws Exception {
+	public void setUp() {
 		cart = new Cart();
 		paymentDetails = new PaymentDetails();
 	}
